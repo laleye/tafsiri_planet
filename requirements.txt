@@ -1,0 +1,6 @@
+streamlit==0.76.0
+timm==0.4.5
+torchaudio
+torch
+sounddevice
+scipy
