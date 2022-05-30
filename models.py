@@ -5,7 +5,6 @@ import numpy as np
 from timm.models.layers import to_2tuple
 from timm.models.layers import trunc_normal_
 from random import randrange
-from matplotlib import pyplot as plt
 import random
 
 
