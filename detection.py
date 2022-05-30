@@ -3,7 +3,7 @@ import torch.nn.functional as F
 import streamlit as st
 from models import ASTModel
 from scipy.io import wavfile
-import sounddevice as sd
+#import sounddevice as sd
 
 n_class = 3
 fshape = 128
@@ -62,8 +62,8 @@ def predict(audio_path, ast_mdl):
         sorted_indexes = np.argsort(prediction)[::-1]
     return prediction
 
-def record_and_predict(sr=16000, channels=1, duration=5, filename='temp.wav'):
-    recording = sd.rec(int(duration * sr), samplerate=sr, channels=channels).reshape(-1)
-    sd.wait()
-    wavfile.write("temp.wav", sr, recording)
-    return predict("temp.wav")
+#def record_and_predict(sr=16000, channels=1, duration=5, filename='temp.wav'):
+    #recording = sd.rec(int(duration * sr), samplerate=sr, channels=channels).reshape(-1)
+    #sd.wait()
+    #wavfile.write("temp.wav", sr, recording)
+    #return predict("temp.wav")
