@@ -1,4 +1,4 @@
-streamlit==0.76.0
+streamlit
 timm==0.4.5
 torchaudio
 torch
